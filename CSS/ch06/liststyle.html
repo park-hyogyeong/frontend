@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liststyle.html</title>
+    <style>
+        ul { list-style: circle; }
+        /* window + .을 누르면 이모지창이 뜸 */
+        ul > li:first-child { list-style: "😘"}
+        ol { list-style: lower-alpha; } /*upper-alpha는 대문자, decimal은 숫자*/
+    </style>
+</head>
+<body>
+    <pre>ul>(li{ul 아이템 $})*3</pre>
+    <ul>
+        <li>ul 아이템 1</li>
+        <li>ul 아이템 2</li>
+        <li>ul 아이템 3</li>
+    </ul>
+    <pre>ol>(li{li 아이템 $})*3</pre>
+   <ol>
+    <li>li 아이템 1</li>
+    <li>li 아이템 2</li>
+    <li>li 아이템 3</li>
+   </ol> 
+</body>
+</html>

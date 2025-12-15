@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .outer li { color: olivedrab; }/* outer가 갖고 있는 자식 중 li가 있는 모든 것에 해당 */
+        .outer > li { color: dodgerblue; }
+        .outer > li li { text-decoration: underline; }
+        .starter ~ li { font-style: italic; }
+        /* General sibling 선택자 (일반) */ /* starter 석삼 말고 그 밑에 너구리부터 */
+        /* Adjacent Sibling 선택자 (인접) */ /* starter 석삼 바로 밑 너구리만 */
+        .starter + li { font-weight: bold; }
+        /* 가상 선택자 (가상클래스 조합) */ /* 순서에 따른 가상 선택자 */
+        ol li:first-child,
+        ol li:last-child { color: yellowgreen; }
+        /* ol li:nth-child(숫자) */ /* 숫자에는 2,3처럼 포인트 색깔 주고 싶은 번호 */
+        ol li:nth-child(3) { color: deeppink; font-weight: bold; }
+        .outer > li:not(:last-child) { text-decoration: line-through; }
+        /* outer에 있는 직계 li 중 마지막 빼고 전부 */
+        ul:not(.outer) li { font-weight: bold; }
+        li:hover { color: blue !important; } /* hover는 마우스 갖다댔을 때 색이 바뀌는 것 */
+    </style>
+    <link rel="stylesheet" href="./pseudoclass.css">
+    <title>pseudoclass.html</title>
+</head>
+<body>
+    <ul class="outer">
+        <li>육류</li>
+        <li>채소</li>
+        <li>유제품</li>
+        <li>과일
+            <ul>
+                <li>사과</li>
+                <li>포도</li>
+                <li>딸기</li>
+                <li>키위</li>
+            </ul>
+        </li>
+    </ul>
+    <ol>
+        <li>한놈</li>
+        <li>두시기</li>
+        <li class="starter">석삼</li>
+        <li>너구리</li>
+        <li>다섯놈</li>
+        <li>육개장</li>
+        <li>칠푼이</li>
+        <li>팔보채</li>
+        <li>구공탄</li>
+    </ol>
+</body>
+</html>

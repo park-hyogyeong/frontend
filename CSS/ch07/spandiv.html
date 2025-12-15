@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spandiv.html</title>
+    <style>
+        /* inline 태그 , 필요한 공간(width)만 차지하려는 성향, 가로세로 크기랑 margin 무시(display를 inline-block으로 바꾸면 적용) */
+        span { display: inline;
+               background-color: rgb(99, 99, 239); }
+        /* span에 inline-block을 주면 둘의 특징을 다 가져감, inline이면서 width랑 height를 적용하고 싶을 때 사용*/
+        /* block 태그 , 가로줄 다(부모의 width 크기) 차지하려는 성향 */
+        div { display: block;
+              background-color: coral;
+              margin-bottom: 10px; }
+        span div { width: 240px; height: 50px; }
+    </style>
+</head>
+<body>
+    <span>span 요소</span>
+
+    <div>div 요소</div>
+
+    <span>span 요소</span>
+    <span>span 요소</span>
+
+    <div>div 요소</div>
+    <div>div 요소</div>
+
+    <span>span 요소</span>
+    <span>span 요소</span>
+    <span>span 요소</span>
+
+    <div>div 요소</div>
+    <div>div 요소</div>
+    <div>div 요소</div>
+
+</body>
+</html>

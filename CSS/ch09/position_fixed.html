@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_fixed.html</title>
+    <style>
+        div { width: 100px; height: 100px; 
+            background-color: bisque; 
+            margin-bottom: 20px;
+        }
+        body { height: 3000px; } /* 스크롤을 내려도 B는 그 위치 그대로 */
+        /* static은 위치 조정 속성 (left, right, top, bottom 속성 무시) */
+        /* fixed는 뷰포트에 고정된다. */
+        .div-b { position: fixed; left: 0; top: 0; right: 0; width: 100vw; }
+    </style>
+</head>
+<body>
+    <body>
+    <div class="div-a">A</div>
+    <div class="div-b">B</div>
+    <div class="div-c">C</div>
+</body>
+</html>

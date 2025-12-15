@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        <table> { border-collapse: collapse; }
+        td { border: 1px solid #ccc; text-align: center; padding: 10px; }
+    </style>
+    <title>tablespantag.html</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1</td>
+            <td colspan="2">col 2</td><!--'2'는 혼자서 두칸 차지하겠단 뜻-->
+            <td>1</td>
+        </tr>
+        <tr>
+            <td rowspan="3">row 3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="2" rowspan="2">col2<br>row2</td>
+        <tr>
+            <td>1</td>
+        </tr>
+    </table>
+</body>
+</html>                 

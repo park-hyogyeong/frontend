@@ -1,0 +1,2 @@
+.style-2 { color: slateblue; }/*앞에 .이 있으면 클래스 선택자, 없으면  태그 선택자*/
+.style-3 { background-color: beige; }
