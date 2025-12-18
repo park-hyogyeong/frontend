@@ -12,16 +12,20 @@ nav ul { padding-left: 0.5em; }
 nav li { display: inline-block; margin-right: 1em; color: #333; }
 #menu { position: absolute; top: 0; right: 0; padding: 0 1em; 
         height: 64px; 
+        display: flex; text-align: right; background-color: beige; 
         line-height: 64px; color: #333; cursor: pointer; }
 main div { margin: 1em; padding: 1em; height: 67vh; 
            color: #333; font-weight: normal; background-color: yellow;  }
 footer { height: 200px; }
 
 @media (max-width: 768px) {
-    nav { display: none; } /* 홈~고객센터 */
+    #menu:hover::before { content: ""; 
+    width: 150px; height: 320px; position: absolute; top: 20px; right: 0; background-color: #fff; z-index: -1; } /* 홈~고객센터 */
+    nav { display: none; }
     #menu:hover + nav { 
         display: inherit; 
-        text-align: right; 
+        text-align: right;
+        background-color: beige; 
     }
     #menu:hover + nav li { 
          display: block; 
