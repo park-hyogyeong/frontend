@@ -12,7 +12,7 @@ for (let i=0; i<star; i++) {
 }
 console.log('-------------');
 let str = '';
-for(let i=0; i<star; i++) {
+for (let i=0; i<star; i++) {
     str = str + '*';
 }
 console.log(str);

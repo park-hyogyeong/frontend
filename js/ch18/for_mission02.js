@@ -1,4 +1,4 @@
-/* for_mmission02.js
+/* for_mission02.js
 */
 for(let i=100; i<110; i++) { //이 라인 돈 터치
     console.log(i - 99);

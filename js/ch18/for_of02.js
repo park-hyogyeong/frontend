@@ -1,4 +1,4 @@
-/* for_array03.js
+/* for_of02.js
 
 */
 
