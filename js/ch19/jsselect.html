@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jsselect.css">
+    <title>jsselect.html</title>
+</head>
+<body>
+    <h1>장보기 목록</h1>
+
+    <section class="plant">
+        <h2>채소</h2>
+        <ul>
+            <li>당근</li>
+            <li>오이</li>
+            <li class="soldout">양파</li>
+        </ul>
+    </section>
+    <section id="sweets" class="plant">
+        <h2>과일</h2>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>포도</li>
+        </ul>
+    </section>
+    <section>
+        <h2>고기
+            <ul>
+                <li class="soldout">소고기</li>
+                <li>돼지고기</li>
+                <li class="soldout">닭고기</li>
+            </ul>
+        </h2>
+    </section>
+
+    <script>
+        const $plantUlSoldout = document.querySelector('.plant ul li.soldout'); //.plant.soldout처럼 붙어있으면 and조건-둘 다 만족해야 선택됨
+        console.log('$plantUlSoldout:', $plantUlSoldout.innerText); //뒤에 소괄호()가 있으면 메소드(동적인 기능 ex)remove는 사라지게 하는 것))
+
+        const $strawberry = document.querySelector('#sweets li:nth-child(2)');
+        console.log('$strawberry.innerText:', $strawberry.innerText);
+
+        const $section = document.querySelector('section'); //메소드 호출
+        console.log('$section.children:', $section.children); //.이 있으면 객체 주소값
+
+        
+    </script>
+
+
+</body>
+</html>
