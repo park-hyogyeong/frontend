@@ -1,4 +1,4 @@
-/* for_mmission05.js
+/* for_mission05.js
 */
 const dan = parseInt(Math.random() * 8.0) + 2; //2~9 랜덤값
 console.log('dan:', dan); //5가 나왔을 때
